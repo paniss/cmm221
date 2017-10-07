@@ -19,7 +19,7 @@
 				<div class="tumbnail">
 					<div class="columns is-marginless"> <!-- columns เอาไว้คลุมให้ทั้งหมดอยู่บรรทัดเดียวกัน -->
 						{% for item in thumbnail %}
-						<div class="column tumbnail-item is-paddingless" style="background-image: url({{ item.url }});">
+						<div class="column tumbnail-item is-paddingless" style="background-image: url({{ item.url }});"> <!--ลิงคืตัวหนังสือจากhomecontrollerมาใส่thumbnail-->
 							{{ item.title }}						
 						</div>
 						{% endfor %}
